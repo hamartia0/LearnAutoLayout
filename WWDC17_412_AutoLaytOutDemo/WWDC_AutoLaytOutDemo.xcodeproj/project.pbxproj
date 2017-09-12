@@ -13,6 +13,8 @@
 		957CFB531F678090001AAE20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957CFB511F678090001AAE20 /* Main.storyboard */; };
 		957CFB551F678090001AAE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957CFB541F678090001AAE20 /* Assets.xcassets */; };
 		957CFB581F678090001AAE20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957CFB561F678090001AAE20 /* LaunchScreen.storyboard */; };
+		95AF36201F6833E200788FE0 /* TrackTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AF361F1F6833E200788FE0 /* TrackTouchViewController.m */; };
+		95AF36231F68376C00788FE0 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AF36221F68376C00788FE0 /* NavigateTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		957CFB541F678090001AAE20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957CFB571F678090001AAE20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		957CFB591F678090001AAE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95AF361E1F6833E200788FE0 /* TrackTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackTouchViewController.h; sourceTree = "<group>"; };
+		95AF361F1F6833E200788FE0 /* TrackTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTouchViewController.m; sourceTree = "<group>"; };
+		95AF36211F68376C00788FE0 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
+		95AF36221F68376C00788FE0 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				957CFB4C1F678090001AAE20 /* AppDelegate.m */,
 				957CFB4E1F678090001AAE20 /* ViewController.h */,
 				957CFB4F1F678090001AAE20 /* ViewController.m */,
+				95AF361E1F6833E200788FE0 /* TrackTouchViewController.h */,
+				95AF361F1F6833E200788FE0 /* TrackTouchViewController.m */,
+				95AF36211F68376C00788FE0 /* NavigateTableViewController.h */,
+				95AF36221F68376C00788FE0 /* NavigateTableViewController.m */,
 				957CFB511F678090001AAE20 /* Main.storyboard */,
 				957CFB541F678090001AAE20 /* Assets.xcassets */,
 				957CFB561F678090001AAE20 /* LaunchScreen.storyboard */,
@@ -151,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AF36201F6833E200788FE0 /* TrackTouchViewController.m in Sources */,
 				957CFB501F678090001AAE20 /* ViewController.m in Sources */,
+				95AF36231F68376C00788FE0 /* NavigateTableViewController.m in Sources */,
 				957CFB4D1F678090001AAE20 /* AppDelegate.m in Sources */,
 				957CFB4A1F678090001AAE20 /* main.m in Sources */,
 			);
@@ -314,6 +326,7 @@
 				957CFB5E1F678090001AAE20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
