@@ -65,7 +65,7 @@
                                     <constraint firstItem="gsJ-X1-4MR" firstAttribute="leading" secondItem="RNf-wC-FKG" secondAttribute="leading" constant="5" id="pg1-sq-Jhs"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMd-yR-zs8">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMd-yR-zs8">
                                 <rect key="frame" x="0.0" y="163" width="375" height="79"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISX-1i-Mmm">
@@ -87,10 +87,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="lG8-zG-eNS" firstAttribute="top" secondItem="ISX-1i-Mmm" secondAttribute="bottom" constant="10" id="1Hs-aV-ls2"/>
+                                    <constraint firstAttribute="height" constant="79" id="87t-ix-yda"/>
                                     <constraint firstItem="tL9-VO-w8Y" firstAttribute="leading" secondItem="lG8-zG-eNS" secondAttribute="trailing" constant="10" id="LdJ-Gl-x3l"/>
                                     <constraint firstItem="ISX-1i-Mmm" firstAttribute="centerX" secondItem="IMd-yR-zs8" secondAttribute="centerX" id="MD4-jd-oCI"/>
                                     <constraint firstItem="lG8-zG-eNS" firstAttribute="leading" secondItem="IMd-yR-zs8" secondAttribute="leading" constant="10" id="Q3i-aX-vm1"/>
-                                    <constraint firstAttribute="bottom" secondItem="lG8-zG-eNS" secondAttribute="bottom" constant="10" id="U87-y5-kB8"/>
                                     <constraint firstItem="tL9-VO-w8Y" firstAttribute="centerY" secondItem="lG8-zG-eNS" secondAttribute="centerY" id="Z0N-no-YKk"/>
                                     <constraint firstItem="ISX-1i-Mmm" firstAttribute="top" secondItem="IMd-yR-zs8" secondAttribute="top" constant="8" id="a7U-th-Yry"/>
                                     <constraint firstItem="ISX-1i-Mmm" firstAttribute="centerX" secondItem="IMd-yR-zs8" secondAttribute="centerX" id="tmu-Cz-UhD"/>
@@ -114,11 +114,16 @@
                                 <action selector="clickEditAction:" destination="BYZ-38-t0r" id="wzr-AF-PBZ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Cart" id="qrh-RQ-3qg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="qrh-RQ-3qg">
+                            <connections>
+                                <action selector="clickCartAction:" destination="BYZ-38-t0r" id="1As-Il-HhP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="gsJ-X1-4MR" id="NHf-MF-4ID"/>
                         <outlet property="edgeConstraint" destination="2C9-sh-0fH" id="ID5-zh-cOL"/>
+                        <outlet property="fakeHeightConstraint" destination="87t-ix-yda" id="2t8-by-pOs"/>
                         <outlet property="wrappingView" destination="RNf-wC-FKG" id="G0X-Ad-Iek"/>
                     </connections>
                 </viewController>

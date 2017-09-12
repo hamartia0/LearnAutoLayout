@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSLayoutConstraint *zeroHeightConstaint;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *edgeConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *fakeHeightConstraint;
 
 @end
 
@@ -50,10 +51,21 @@
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickCartAction:(UIBarButtonItem *)sender {
+    
+    if (_fakeHeightConstraint.constant == 0) {
+        _fakeHeightConstraint.constant = 79.0f;
+    } else {
+        _fakeHeightConstraint.constant = 0.0f;
+    }
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+    
+    
 }
+
 
 
 @end
